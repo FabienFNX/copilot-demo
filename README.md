@@ -77,3 +77,37 @@ Generate a spring repository for Customer using CRUD Repository
 ```Python
 Create a Spring REST API Controller for customer using CustomerRepository
 ```
+
+## Debug avec Copilot
+
+### Correction en précisant le code qui n'est pas bon
+
+```Python
+@workspace /fix #selection with #file:Customer.java
+```
+
+### Correction à partir de logs
+
+```Python
+2024-03-18T19:08:07.924+01:00  INFO 51304 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-18T19:08:07.924+01:00  INFO 51304 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-18T19:08:08.000+01:00  INFO 51304 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext 2024-03-18T19:08:08.019+01:00  INFO 51304 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1489 ms
+2024-03-18T19:08:08.093+01:00  WARN 51304 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2024-03-18T19:08:08.096+01:00  INFO 51304 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-03-18T19:08:08.112+01:00  INFO 51304 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger :
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-03-18T19:08:08.152+01:00 ERROR 51304 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   :
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+```
+
+```Python
+Correct with h2 database
+```

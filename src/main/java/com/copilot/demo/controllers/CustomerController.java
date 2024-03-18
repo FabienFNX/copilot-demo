@@ -1,6 +1,5 @@
 package com.copilot.demo.controllers;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -36,7 +35,8 @@ public class CustomerController {
     @PutMapping("/{id}")
     public Customer updateCustomer(@PathVariable Long id, @RequestBody Customer customer) {
         return repository.findById(id).map(existingCustomer -> {
-            existingCustomer.setName(customer.getName());
+            existingCustomer.setFirstName(customer.getFirstName());
+            existingCustomer.setLastName(customer.getLastName());
             return repository.save(existingCustomer);
         }).orElse(null);
     }
