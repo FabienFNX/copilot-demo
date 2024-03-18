@@ -39,3 +39,21 @@ Insert into the database 6 customers with :
 Insert into the database 3 customers with : first name and last name that matches the last 3 presidents of the USA and their age when they were elected
 */
 ```
+
+## Utiliser le Chat Local
+
+### Création d'un fichier Java depuis une table SQL
+
+```md
+Create a java class from this code using Spring JPA annotations
+```
+
+### Modification du code produit
+
+```md
+Using Jakarta import instead
+```
+
+```md
+Transform the code to use lambok
+```

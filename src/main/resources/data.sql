@@ -34,3 +34,4 @@ INSERT INTO customer (first_name, last_name, age) VALUES ('Barack', 'Obama', 47)
 INSERT INTO customer (first_name, last_name, age) VALUES ('George', 'Bush', 54);
 
 
+
