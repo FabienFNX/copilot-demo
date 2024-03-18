@@ -111,3 +111,21 @@ Failed to configure a DataSource: 'url' attribute is not specified and no embedd
 ```Python
 Correct with h2 database
 ```
+
+## Génération de la documentation avec Copilot
+
+### Java Doc
+
+```Python
+/doc
+```
+
+```Python
+/doc for the class and all methods
+```
+
+### Documentation
+
+```Python
+@workspace /explain like I am 5 years old
+```
