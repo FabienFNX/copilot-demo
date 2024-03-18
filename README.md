@@ -129,3 +129,13 @@ Correct with h2 database
 ```Python
 @workspace /explain like I am 5 years old
 ```
+
+## Utilisation des agents
+
+```Python
+@workspace Where should I add the attribute weight ?
+```
+
+```Python
+@terminal run a spring application
+```
