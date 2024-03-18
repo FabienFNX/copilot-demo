@@ -57,3 +57,23 @@ Using Jakarta import instead
 ```md
 Transform the code to use lambok
 ```
+
+## Utiliser le Chat
+
+### Pour obtenir des informations générales
+
+```Python
+What are the SOLID principles ?
+```
+
+### Générer un repository en utilisant une classe Java
+
+```Python
+Generate a spring repository for Customer using CRUD Repository
+```
+
+### Générer un controller Rest en utilisant une classe Java
+
+```Python
+Create a Spring REST API Controller for customer using CustomerRepository
+```
