@@ -145,3 +145,9 @@ Correct with h2 database
 ```Python
 /tests
 ```
+
+## Génération d'un code Angular
+
+```Python
+Generate Angular Service that calls the endpoints in #file:CustomerController.java
+```
