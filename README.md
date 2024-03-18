@@ -151,3 +151,27 @@ Correct with h2 database
 ```Python
 Generate Angular Service that calls the endpoints in #file:CustomerController.java
 ```
+
+## Utilisation de GitHub Copilot pour le terminal
+
+### Trouver une commande
+
+```Bash
+gh copilot suggest "Change DNS servers for the Wifi interface"
+```
+
+```Bash
+Change for use on Windows
+```
+
+### Expliquer une commande
+
+```Bash
+gh copilot explain "netsh interface ip set dns "Wi-Fi" static 8.8.8.8 primary
+```
+
+### Faire des choses un peu plus complexes
+
+```Bash
+gh copilot suggest "count the number of lines containing the word : copilot inside the file README.md, also print the first five results
+```
