@@ -139,3 +139,9 @@ Correct with h2 database
 ```Python
 @terminal run a spring application
 ```
+
+## Mise en place de tests unitaires
+
+```Python
+/tests
+```
