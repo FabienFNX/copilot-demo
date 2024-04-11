@@ -217,3 +217,29 @@ failed with this message org.opentest4j.AssertionFailedError: expected: not equa
 How can I modify my code to make it pass ?
 Could you give me 5 different propositions and identify benefits and concerns for each ?
 ```
+
+## Utilisation de GitHub Copilot pour générer une documentation dédiée à Copilot
+
+```Bash
+Giving the PurchaseRecord file could you generate at most 10 coding questions where the answer could be find in the file PurchaseRecord ? Display the answer just after the question
+```
+
+```Bash
+Giving the CustomerController and Customer file could you generate at most 10 coding questions where the answer could be find in those files ? Display the answer just after the question
+```
+
+```Bash
+How could I link customer with purchase ?
+```
+
+```Bash
+Giving the informations in IA_README.md can you help me link a customer with purchases record ?
+```
+
+```Bash
+Could you refine your proposition based on the files Customer and PurchaseRecord
+```
+
+```Bash
+Only show me lines modified
+```
