@@ -175,3 +175,45 @@ gh copilot explain "netsh interface ip set dns "Wi-Fi" static 8.8.8.8 primary
 ```Bash
 gh copilot suggest "count the number of lines containing the word : copilot inside the file README.md, also print the first five results
 ```
+
+## Utilisation de GitHub Copilot pour générer de nouvelles fonctionnalités
+
+```Bash
+I would like to write a program that presents customers with a bunch a purchases, what requirements could be interesting ?
+```
+
+```Bash
+What could be key characteristics of Purchase history, describe it as simple tests that I can easily check
+```
+
+```Bash
+How can I modify the code in PurchaseHistory given the code in PurchaseHistoryTest ? Add the minimum code possible
+```
+```Bash
+The following test :     void testUniqueness() {
+        // Create two purchase records with the same ID
+        PurchaseRecord record1 = new PurchaseRecord(1, "Product1", 1, 100, "2023-01-01");
+        PurchaseRecord record2 = new PurchaseRecord(1, "Product2", 2, 200, "2023-01-02");
+
+        // Check if the IDs are unique
+        assertNotEquals(record1.getId(), record2.getId());
+    }
+
+failed with this message org.opentest4j.AssertionFailedError: expected: not equal but was: <1>
+How can I modify my code to make it pass ?
+```
+
+```Bash
+The following test :     void testUniqueness() {
+        // Create two purchase records with the same ID
+        PurchaseRecord record1 = new PurchaseRecord(1, "Product1", 1, 100, "2023-01-01");
+        PurchaseRecord record2 = new PurchaseRecord(1, "Product2", 2, 200, "2023-01-02");
+
+        // Check if the IDs are unique
+        assertNotEquals(record1.getId(), record2.getId());
+    }
+
+failed with this message org.opentest4j.AssertionFailedError: expected: not equal but was: <1>
+How can I modify my code to make it pass ?
+Could you give me 5 different propositions and identify benefits and concerns for each ?
+```
